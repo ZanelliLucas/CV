@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas Zanelli — Portfolio</title>
+  <meta name="description" content="Portfolio de Lucas Zanelli (Luc), créateur de sites web passionné par la programmation de jeux vidéo, la modélisation 3D, le graphisme et le montage vidéo.">
+  <meta name="theme-color" content="#050508">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Open Graph / partage réseaux sociaux -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lucas Zanelli — Portfolio">
+  <meta property="og:description" content="Créateur de sites web passionné par la programmation de jeux vidéo, la modélisation 3D, le graphisme et le montage vidéo.">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lucas Zanelli — Portfolio">
+  <meta name="twitter:description" content="Créateur de sites web passionné par la programmation de jeux vidéo, la modélisation 3D, le graphisme et le montage vidéo.">
+  <meta name="twitter:image" content="images/og-image.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <div class="nav-logo">L<span>Z</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"><span class="fr">À Propos</span><span class="en">About</span></a></li>
+      <li><a href="#skills"><span class="fr">Compétences</span><span class="en">Skills</span></a></li>
+      <li><a href="#projects"><span class="fr">Projets</span><span class="en">Projects</span></a></li>
+      <li><a href="#experience"><span class="fr">Parcours</span><span class="en">Journey</span></a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-btn active" id="btnFr" onclick="setLang('fr')">FR</button>
+      <button class="lang-btn" id="btnEn" onclick="setLang('en')">EN</button>
+      <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="orb1 hero-bg-orb"></div>
+    <div class="orb2 hero-bg-orb"></div>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="fr">Portfolio &amp; Curriculum Vitae</span>
+        <span class="en">Portfolio &amp; Curriculum Vitae</span>
+      </div>
+      <h1 class="hero-name">LUCAS <span class="last">ZANELLI</span></h1>
+      <div class="hero-pseudo">Luc</div>
+      <p class="hero-desc fr">
+        Créateur de sites web passionné par la programmation de jeux vidéo, la modélisation 3D,
+        le graphisme et le montage vidéo. Je transforme les idées en expériences visuelles mémorables.
+      </p>
+      <p class="hero-desc en">
+        Web creator passionate about game development, 3D modeling, graphic design and video editing.
+        I turn ideas into memorable visual experiences.
+      </p>
+      <div class="hero-skills-pills">
+        <span class="pill accent">Game Dev</span>
+        <span class="pill">Web Design</span>
+        <span class="pill">3D Modeling</span>
+        <span class="pill">Graphic Design</span>
+        <span class="pill">Video Editing</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span class="fr">Voir mes projets</span>
+          <span class="en">View my projects</span>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span class="fr">Me contacter</span>
+          <span class="en">Contact me</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title fr">À Propos</h2>
+      <h2 class="section-title en">About</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p class="fr">
+          Bonjour ! Je suis <strong>Lucas Zanelli</strong>, alias <strong>Luc</strong> — un créatif
+          passionné par le numérique sous toutes ses formes. Actuellement spécialisé dans la
+          <strong>création de sites web</strong>, mon ambition est de m'orienter vers la
+          <strong>programmation de jeux vidéo</strong>.
+        </p>
+        <p class="en">
+          Hello! I'm <strong>Lucas Zanelli</strong>, aka <strong>Luc</strong> — a creative passionate
+          about digital in all its forms. Currently specialized in <strong>web development</strong>,
+          my ambition is to move towards <strong>game programming</strong>.
+        </p>
+        <p class="fr">
+          Ma palette de compétences va au-delà du code : je maîtrise la <strong>modélisation 3D</strong>,
+          le <strong>graphisme</strong> et le <strong>montage vidéo</strong>, ce qui me permet d'aborder
+          les projets avec une vision complète, alliant technique et créativité.
+        </p>
+        <p class="en">
+          My skillset goes beyond code: I master <strong>3D modeling</strong>, <strong>graphic design</strong>
+          and <strong>video editing</strong>, which allows me to approach projects with a complete vision,
+          combining technical skills and creativity.
+        </p>
+        <p class="fr">
+          Je recherche une opportunité (école ou entreprise) qui me permettra de grandir, apprendre
+          et contribuer à des projets ambitieux.
+        </p>
+        <p class="en">
+          I'm looking for an opportunity (school or company) that will allow me to grow, learn
+          and contribute to ambitious projects.
+        </p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-title">
+          <span class="fr">Informations</span>
+          <span class="en">Information</span>
+        </div>
+        <div class="about-info-row">
+          <span class="about-info-label fr">Nom</span>
+          <span class="about-info-label en">Name</span>
+          <span class="about-info-value">Lucas Zanelli</span>
+        </div>
+        <div class="about-info-row">
+          <span class="about-info-label">Pseudo</span>
+          <span class="about-info-value">Luc</span>
+        </div>
+        <div class="about-info-row">
+          <span class="about-info-label fr">Domaine</span>
+          <span class="about-info-label en">Field</span>
+          <span class="about-info-value">Web & Game Dev</span>
+        </div>
+        <div class="about-info-row">
+          <span class="about-info-label fr">Objectif</span>
+          <span class="about-info-label en">Goal</span>
+          <span class="about-info-value fr">Prog. Jeux Vidéo</span>
+          <span class="about-info-value en">Game Programming</span>
+        </div>
+        <div class="about-info-row">
+          <span class="about-info-label fr">Disponibilité</span>
+          <span class="about-info-label en">Availability</span>
+          <span class="about-info-value fr">À préciser</span>
+          <span class="about-info-value en">To be confirmed</span>
+        </div>
+        <div class="about-info-row">
+          <span class="about-info-label fr">Langue</span>
+          <span class="about-info-label en">Language</span>
+          <span class="about-info-value">FR / EN</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <span class="section-num">02</span>
+      <h2 class="section-title fr">Compétences</h2>
+      <h2 class="section-title en">Skills</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-category reveal">
+        <div class="sk-icon">🌐</div>
+        <div class="sk-title">
+          <span class="fr">Développement Web</span>
+          <span class="en">Web Development</span>
+        </div>
+        <div class="sk-tags">
+          <span class="sk-tag">HTML / CSS</span>
+          <span class="sk-tag">JavaScript</span>
+          <span class="sk-tag">PHP</span>
+          <span class="sk-tag">Java</span>
+          <span class="sk-tag">Python</span>
+          <span class="sk-tag">C#</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="sk-icon">🎮</div>
+        <div class="sk-title">
+          <span class="fr">Jeux Vidéo</span>
+          <span class="en">Game Development</span>
+        </div>
+        <div class="sk-tags">
+          <span class="sk-tag">Unity</span>
+          <span class="sk-tag">Unreal Engine</span>
+          <span class="sk-tag">Game Design</span>
+          <span class="sk-tag">C#</span>
+          <span class="sk-tag">Scripting</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="sk-icon">🎨</div>
+        <div class="sk-title">
+          <span class="fr">Graphisme & 3D</span>
+          <span class="en">Design & 3D</span>
+        </div>
+        <div class="sk-tags">
+          <span class="sk-tag"><span class="fr">Modélisation 3D</span><span class="en">3D Modeling</span></span>
+          <span class="sk-tag"><span class="fr">Graphisme</span><span class="en">Graphic Design</span></span>
+          <span class="sk-tag">UI / Visual</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="sk-icon">🎬</div>
+        <div class="sk-title">
+          <span class="fr">Montage Vidéo</span>
+          <span class="en">Video Editing</span>
+        </div>
+        <div class="sk-tags">
+          <span class="sk-tag">Premiere Pro</span>
+          <span class="sk-tag">After Effects</span>
+          <span class="sk-tag">Motion Design</span>
+          <span class="sk-tag">Color Grading</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title fr">Projets</h2>
+      <h2 class="section-title en">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- Onglets -->
+    <div class="project-tabs reveal">
+      <button class="project-tab active" data-tab="siteweb">
+        <span class="tab-icon">🌐</span>
+        <span class="fr">Site Web</span><span class="en">Web</span>
+      </button>
+      <button class="project-tab" data-tab="graphisme">
+        <span class="tab-icon">🎨</span>
+        <span class="fr">Graphisme</span><span class="en">Design</span>
+      </button>
+      <button class="project-tab" data-tab="3d">
+        <span class="tab-icon">🧊</span>
+        <span>3D</span>
+      </button>
+      <button class="project-tab" data-tab="jeux">
+        <span class="tab-icon">🎮</span>
+        <span class="fr">Jeux Vidéo</span><span class="en">Games</span>
+      </button>
+      <button class="project-tab" data-tab="video">
+        <span class="tab-icon">🎬</span>
+        <span class="fr">Montage Vidéo</span><span class="en">Video</span>
+      </button>
+    </div>
+
+    <!-- Contenu : Site Web -->
+    <div class="project-panel active" data-panel="siteweb">
+      <div class="flex-cards-container">
+        <input type="radio" name="slide-siteweb" id="sw1" checked>
+        <label for="sw1" class="flex-card flex-card-photo">
+          <!-- Aperçu statique (léger, sans charger le site externe) -->
+          <div class="flex-card-preview">
+            <img src="images/Maison_Noire_preview.jpg" alt="Aperçu du site Maison Noire" class="flex-card-preview-img" loading="lazy">
+            <div class="flex-card-preview-overlay"></div>
+          </div>
+          <!-- Infos en bas -->
+          <div class="flex-card-row">
+            <div class="flex-card-icon"><img src="images/Logo_Maison_Noire_icon.png" alt="Maison Noire logo" class="flex-card-icon-img" width="44" height="44" loading="lazy"></div>
+            <div class="flex-card-desc">
+              <div class="flex-card-desc-text">
+                <h4>Maison Noire</h4>
+                <p class="fr">Site e-commerce Haute Couture — HTML, CSS, JS</p>
+                <p class="en">Haute Couture e-commerce website — HTML, CSS, JS</p>
+              </div>
+              <a href="https://maison-noire-indol.vercel.app/" target="_blank" rel="noopener" class="flex-card-btn fr">Voir le projet <i class="btn-arrow">→</i></a>
+              <a href="https://maison-noire-indol.vercel.app/" target="_blank" rel="noopener" class="flex-card-btn en">View project <i class="btn-arrow">→</i></a>
+            </div>
+          </div>
+        </label>
+        <input type="radio" name="slide-siteweb" id="sw2">
+        <label for="sw2" class="flex-card flex-card-photo">
+          <div class="flex-card-preview">
+            <img src="images/Forma_preview.jpg" alt="Aperçu du site Forma" class="flex-card-preview-img" loading="lazy">
+            <div class="flex-card-preview-overlay"></div>
+          </div>
+          <div class="flex-card-row">
+            <div class="flex-card-icon"><img src="images/Logo_Forma_icon.png" alt="Forma logo" class="flex-card-icon-img" width="44" height="44" loading="lazy"></div>
+            <div class="flex-card-desc">
+              <div class="flex-card-desc-text">
+                <h4>Forma</h4>
+                <p class="fr">Site vitrine moderne — HTML, CSS, JS</p>
+                <p class="en">Modern showcase website — HTML, CSS, JS</p>
+              </div>
+              <a href="https://forma-lilac.vercel.app/" target="_blank" rel="noopener" class="flex-card-btn fr">Voir le projet <i class="btn-arrow">→</i></a>
+              <a href="https://forma-lilac.vercel.app/" target="_blank" rel="noopener" class="flex-card-btn en">View project <i class="btn-arrow">→</i></a>
+            </div>
+          </div>
+        </label>
+        <input type="radio" name="slide-siteweb" id="sw3">
+        <label for="sw3" class="flex-card flex-card-photo">
+          <div class="flex-card-preview">
+            <img src="images/Nexus_preview.jpg" alt="Aperçu du site Nexus" class="flex-card-preview-img" loading="lazy">
+            <div class="flex-card-preview-overlay"></div>
+          </div>
+          <div class="flex-card-row">
+            <div class="flex-card-icon"><img src="images/Logo_Nexus_icon.png" alt="Nexus logo" class="flex-card-icon-img" width="44" height="44" loading="lazy"></div>
+            <div class="flex-card-desc">
+              <div class="flex-card-desc-text">
+                <h4>Nexus</h4>
+                <p class="fr">Site de gestion interne — HTML, CSS, JS</p>
+                <p class="en">Internal management platform — HTML, CSS, JS</p>
+              </div>
+              <a href="https://nexus-sigma-pearl.vercel.app/" target="_blank" rel="noopener" class="flex-card-btn fr">Voir le projet <i class="btn-arrow">→</i></a>
+              <a href="https://nexus-sigma-pearl.vercel.app/" target="_blank" rel="noopener" class="flex-card-btn en">View project <i class="btn-arrow">→</i></a>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <!-- Contenu : Graphisme -->
+    <div class="project-panel" data-panel="graphisme">
+      <div class="panel-empty">
+        <div class="panel-empty-icon">🎨</div>
+        <h4 class="panel-empty-title fr">Bientôt disponible</h4>
+        <h4 class="panel-empty-title en">Coming soon</h4>
+        <p class="panel-empty-text fr">Cette section est en préparation — logo, affiches, identité visuelle...</p>
+        <p class="panel-empty-text en">This section is in the works — logo, posters, visual identity...</p>
+      </div>
+    </div>
+
+    <!-- Contenu : 3D -->
+    <div class="project-panel" data-panel="3d">
+      <div class="panel-empty">
+        <div class="panel-empty-icon">🧊</div>
+        <h4 class="panel-empty-title fr">Bientôt disponible</h4>
+        <h4 class="panel-empty-title en">Coming soon</h4>
+        <p class="panel-empty-text fr">Cette section est en préparation — modélisation, rendu, animation 3D...</p>
+        <p class="panel-empty-text en">This section is in the works — modeling, rendering, 3D animation...</p>
+      </div>
+    </div>
+
+    <!-- Contenu : Jeux Vidéo -->
+    <div class="project-panel" data-panel="jeux">
+      <div class="panel-empty">
+        <div class="panel-empty-icon">🎮</div>
+        <h4 class="panel-empty-title fr">Bientôt disponible</h4>
+        <h4 class="panel-empty-title en">Coming soon</h4>
+        <p class="panel-empty-text fr">Cette section est en préparation — prototypes, game jams, jeux complets...</p>
+        <p class="panel-empty-text en">This section is in the works — prototypes, game jams, full games...</p>
+      </div>
+    </div>
+
+    <!-- Contenu : Montage Vidéo -->
+    <div class="project-panel" data-panel="video">
+      <div class="panel-empty">
+        <div class="panel-empty-icon">🎬</div>
+        <h4 class="panel-empty-title fr">Bientôt disponible</h4>
+        <h4 class="panel-empty-title en">Coming soon</h4>
+        <p class="panel-empty-text fr">Cette section est en préparation — courts-métrages, clips, motion design...</p>
+        <p class="panel-empty-text en">This section is in the works — short films, clips, motion design...</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── PARCOURS ── -->
+  <section id="experience">
+    <div class="section-header reveal">
+      <span class="section-num">04</span>
+      <h2 class="section-title fr">Parcours</h2>
+      <h2 class="section-title en">Journey</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="experience-grid">
+
+      <!-- FORMATION -->
+      <div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:0.8rem;letter-spacing:0.2em;color:var(--accent2);margin-bottom:2rem;text-transform:uppercase;" class="reveal">
+          <span class="fr">🎓 Formation</span>
+          <span class="en">🎓 Education</span>
+        </h3>
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022 — 2024</div>
+            <div class="timeline-title fr">BTS SIO — Option SLAM</div>
+            <div class="timeline-title en">BTS SIO — SLAM Option</div>
+            <div class="timeline-org fr">Lycée Joinville-le-Pont</div>
+            <div class="timeline-org en">Lycée Joinville-le-Pont</div>
+            <div class="timeline-desc fr">BTS Services Informatiques aux Organisations, spécialité Solutions Logicielles et Applications Métiers. Développement web, bases de données, programmation orientée objet.</div>
+            <div class="timeline-desc en">IT Services for Organizations degree, Software Solutions specialization. Web development, databases, object-oriented programming.</div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2019 — 2022</div>
+            <div class="timeline-title fr">Bac Pro M.E.L.E.C</div>
+            <div class="timeline-title en">Vocational Bac M.E.L.E.C</div>
+            <div class="timeline-org fr">Lycée Maurice Rondeau</div>
+            <div class="timeline-org en">Lycée Maurice Rondeau</div>
+            <div class="timeline-desc fr">Baccalauréat Professionnel Métiers de l'Électricité et de ses Environnements Connectés. Électricité, systèmes automatisés, courants forts et courants faibles.</div>
+            <div class="timeline-desc en">Professional Baccalaureate in Electrical Trades and Connected Environments. Electricity, automated systems, high and low current installations.</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- EXPÉRIENCES -->
+      <div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:0.8rem;letter-spacing:0.2em;color:var(--accent);margin-bottom:2rem;text-transform:uppercase;" class="reveal">
+          <span class="fr">💼 Expériences</span>
+          <span class="en">💼 Experience</span>
+        </h3>
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" style="background:var(--accent2);box-shadow:0 0 12px var(--glow2);"></div>
+            <div class="timeline-date fr">2025 — 6 semaines</div>
+            <div class="timeline-date en">2025 — 6 weeks</div>
+            <div class="timeline-title fr">Technicien Aéronautique</div>
+            <div class="timeline-title en">Aeronautics Technician</div>
+            <div class="timeline-org">UUDS Aero Service Électricité</div>
+            <div class="timeline-desc fr">Travaux en aéronautique dans la continuité des missions précédentes.</div>
+            <div class="timeline-desc en">Aeronautics work continuing previous missions.</div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" style="background:var(--accent2);box-shadow:0 0 12px var(--glow2);"></div>
+            <div class="timeline-date fr">2024 — 6 semaines</div>
+            <div class="timeline-date en">2024 — 6 weeks</div>
+            <div class="timeline-title fr">Technicien Aéronautique</div>
+            <div class="timeline-title en">Aeronautics Technician</div>
+            <div class="timeline-org">UUDS Aero Service Électricité</div>
+            <div class="timeline-desc fr">Fabrication de harnais, vérification des boutons de sièges, inventaire, encadrement d'une personne en situation de handicap.</div>
+            <div class="timeline-desc en">Harness manufacturing, seat button checks, inventory management, supervision of a person with disability.</div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" style="background:var(--accent);box-shadow:0 0 12px var(--glow);"></div>
+            <div class="timeline-date fr">2024 — Stage 6 semaines</div>
+            <div class="timeline-date en">2024 — Internship 6 weeks</div>
+            <div class="timeline-title fr">Développeur Web</div>
+            <div class="timeline-title en">Web Developer</div>
+            <div class="timeline-org">Agefiph</div>
+            <div class="timeline-desc fr">Vérification des règles Opquast sur le site web et création d'une page de maintenance.</div>
+            <div class="timeline-desc en">Verification of Opquast accessibility rules on the website and creation of a maintenance page.</div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" style="background:var(--accent);box-shadow:0 0 12px var(--glow);"></div>
+            <div class="timeline-date fr">2024 — Stage 6 semaines</div>
+            <div class="timeline-date en">2024 — Internship 6 weeks</div>
+            <div class="timeline-title fr">Développeur Web</div>
+            <div class="timeline-title en">Web Developer</div>
+            <div class="timeline-org">UUDS Aero</div>
+            <div class="timeline-desc fr">Conception d'un site internet interne à l'entreprise.</div>
+            <div class="timeline-desc en">Design and development of an internal company website.</div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" style="background:var(--accent2);box-shadow:0 0 12px var(--glow2);"></div>
+            <div class="timeline-date fr">2023 — 6 semaines</div>
+            <div class="timeline-date en">2023 — 6 weeks</div>
+            <div class="timeline-title fr">Technicien Aéronautique</div>
+            <div class="timeline-title en">Aeronautics Technician</div>
+            <div class="timeline-org">UUDS Aero Service Électricité</div>
+            <div class="timeline-desc fr">Conception de harnais électriques pour l'aéronautique.</div>
+            <div class="timeline-desc en">Design and manufacturing of electrical harnesses for aeronautics.</div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" style="background:var(--accent2);box-shadow:0 0 12px var(--glow2);"></div>
+            <div class="timeline-date fr">2023 — Stage 8 semaines</div>
+            <div class="timeline-date en">2023 — Internship 8 weeks</div>
+            <div class="timeline-title fr">Technicien Aéronautique</div>
+            <div class="timeline-title en">Aeronautics Technician</div>
+            <div class="timeline-org">UUDS Aero Service Électricité</div>
+            <div class="timeline-desc fr">Découverte de l'entreprise et apprentissage du fonctionnement des machines aéronautiques.</div>
+            <div class="timeline-desc en">Company discovery and learning of aeronautical machine operations.</div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" style="background:var(--accent2);box-shadow:0 0 12px var(--glow2);"></div>
+            <div class="timeline-date fr">2022 — Stage 8 semaines</div>
+            <div class="timeline-date en">2022 — Internship 8 weeks</div>
+            <div class="timeline-title fr">Électricien Industriel</div>
+            <div class="timeline-title en">Industrial Electrician</div>
+            <div class="timeline-org">Air Concept Industrie</div>
+            <div class="timeline-desc fr">Découverte de l'entreprise et participation au changement d'une baie électrique industrielle.</div>
+            <div class="timeline-desc en">Company discovery and participation in the replacement of an industrial electrical bay.</div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" style="background:var(--accent2);box-shadow:0 0 12px var(--glow2);"></div>
+            <div class="timeline-date fr">2022 — 3 semaines</div>
+            <div class="timeline-date en">2022 — 3 weeks</div>
+            <div class="timeline-title fr">Électricien Aéronautique</div>
+            <div class="timeline-title en">Aeronautical Electrician</div>
+            <div class="timeline-org">UUDS Aero Service Électricité</div>
+            <div class="timeline-desc fr">Tests de boutons pour sièges d'avion.</div>
+            <div class="timeline-desc en">Testing of buttons for aircraft seats.</div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" style="background:var(--muted);box-shadow:none;"></div>
+            <div class="timeline-date fr">2021 — Stage 6 semaines</div>
+            <div class="timeline-date en">2021 — Internship 6 weeks</div>
+            <div class="timeline-title fr">Électricien</div>
+            <div class="timeline-title en">Electrician</div>
+            <div class="timeline-org">Antenne Service</div>
+            <div class="timeline-desc fr">Maintenance d'alarmes en entreprise et chez les particuliers.</div>
+            <div class="timeline-desc en">Alarm maintenance for businesses and private clients.</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Contact</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-text reveal">
+        <h3 class="fr">Travaillons ensemble</h3>
+        <h3 class="en">Let's work together</h3>
+        <p class="fr">Tu as un projet, une opportunité ou tu veux juste discuter ? Je suis disponible et toujours ouvert à de nouvelles collaborations. N'hésite pas à me contacter !</p>
+        <p class="en">You have a project, an opportunity, or just want to chat? I'm available and always open to new collaborations. Feel free to reach out!</p>
+        <div class="contact-links">
+          <a href="#" class="contact-link" id="emailLink" data-email-rev="gro.z-sel@sacul">
+            <span class="contact-link-icon">✉️</span>
+            <span id="emailText"></span>
+          </a>
+          <a href="https://www.linkedin.com/in/lucas-zanelli-a742363b3/" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link-icon">💼</span>
+            <span>linkedin.com/in/lucas-zanelli</span>
+          </a>
+          <a href="https://github.com/ZanelliLucas" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-link-icon">🐙</span>
+            <span>github.com/ZanelliLucas</span>
+          </a>
+        </div>
+      </div>
+      <div class="reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label class="form-label fr">Votre nom</label>
+            <label class="form-label en">Your name</label>
+            <input type="text" class="form-input" id="contactName" placeholder="Lucas Zanelli" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" id="contactEmail" placeholder="contact@example.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label fr">Message</label>
+            <label class="form-label en">Message</label>
+            <textarea class="form-textarea fr" id="contactMessageFr" placeholder="Bonjour Lucas, je vous contacte au sujet de..."></textarea>
+            <textarea class="form-textarea en" id="contactMessageEn" placeholder="Hello Lucas, I'm reaching out about..."></textarea>
+          </div>
+          <p class="form-hint fr">Envoie ouvrira ton client mail avec le message pré-rempli.</p>
+          <p class="form-hint en">Send will open your email client with the message pre-filled.</p>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start;">
+            <span class="fr">Envoyer</span>
+            <span class="en">Send</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-copy fr">© 2025 Lucas Zanelli — Tous droits réservés</div>
+    <div class="footer-copy en">© 2025 Lucas Zanelli — All rights reserved</div>
+    <div class="footer-logo">LZ</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
